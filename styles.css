@@ -92,7 +92,7 @@ i {
 #navbar a:hover {
   background-color: #204692ce;
 }
-#navbar .icon {
+#navbar .icon-ham {
   display: none;
 }
 /* #navbar a.active {
@@ -322,6 +322,9 @@ textarea {
   body {
     overflow-x: hidden;
   }
+  .icon-mobile {
+    display: none;
+  }
   #start-page {
     background-image: url("./truck.jpg");
     background-repeat: no-repeat;
@@ -354,7 +357,7 @@ textarea {
   #navbar a:not(:nth-child(3)) {
     display: none;
   }
-  #navbar a.icon {
+  #navbar a.icon-ham {
     display: block;
     margin-top: 20px;
   }
@@ -367,7 +370,7 @@ textarea {
     position: fixed;
     top: 0;
   }
-  #navbar.responsive .icon {
+  #navbar.responsive .icon-ham {
     position: absolute;
     right: 0;
     top: 0;
@@ -469,7 +472,7 @@ textarea {
     width: 220px;
   }
   .contact-head span {
-    width: 100px;
+    width: 200px;
   }
   /* .contact-other-div {
     padding-left: 10px;
