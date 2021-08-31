@@ -3,16 +3,23 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title></title>
-    <meta name="description" content="" />
+    <title>APS Translines</title>
+    <meta
+      name="description"
+      content="Warehouses and Transport across the southern India."
+    />
+    <meta
+      name="keywords"
+      content="truck transport services, Kolhapur, Mumbai, Chennai, transline, Warehouses, APS Translines"
+    />
+    <meta name="author" content="APS Translines Pvt. Ltd." />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
     />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -23,6 +30,10 @@
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    /> -->
   </head>
   <body>
     <section id="start-page">
@@ -38,23 +49,28 @@
         </h2>
       </div>
 
-      <button class="start-button">Services</button>
+      <button class="start-button" onclick="window.location.href='#services'">
+        Services
+      </button>
     </section>
     <div id="navbar" class="topnav">
       <a href="#start-page">Home</a>
       <a href="#services">Services</a>
-      <a href=""><img class="nav-logo" src="./logo.jpg" alt="" /></a>
-      <a href="#">About Us</a>
-      <a href="#">Contact Us</a>
+      <a id="nav-display" href="#start-page"
+        ><img class="nav-logo" src="./logo.jpg" alt=""
+      /></a>
+      <a href="#about-us">About Us</a>
+      <a href="#contact-us">Contact Us</a>
       <a href="javascript:void(0);" class="icon" onclick="navBar()">
         <i class="fa fa-bars"></i>
       </a>
     </div>
     <section id="services">
       <div id="blank"></div>
-      <h1>Services</h1>
+      <h1 class="animate__animated animate__fadeIn">Services</h1>
+
       <h3>
-        we provide the fastest, most secure, On – demand delivery services –
+        We provide the fastest, most secure, On – demand delivery services –
         whatever, whenever and wherever you need to deliver.
       </h3>
       <div class="service-box">
@@ -65,7 +81,8 @@
             At times when speed is critical and your goods have to be delivered
             as fast as possible, we transport your goods through the fastest
             mode and ensure that your shipments reach the destinations as fast
-            as possible
+            as possible. We also have material tracking GPS device ,so you
+            always know where your shipments are!
           </h4>
         </div>
 
@@ -76,7 +93,7 @@
             APS Logistics takes maximum care of your goods right from the time
             we collect them to the time we deliver them, even when your goods
             are not in transit, you can be assured that they are safe in our
-            care. For this we have well – equipped and well – manned warehouses
+            care.For this we have well – equipped and well – manned warehouses
             with ample storage space for storing your precious cargo. Our
             warehouses are located at Pune, Bhiwandi, Mumbai, Kolhapur,
             Coimbatore, Chennai and Bangalore.
@@ -89,8 +106,9 @@
             For goods to be delivered at normal speed, our fleets of modern and
             fully equipped vehicles are at your service 24 x 7. Armed with a
             force of 200+ vehicles, 50+ centers and a network of hundreds of
-            routes, we cover the states of entire India and our vehicles ply the
-            entire length and breadth of our Nation.
+            routes, we have setted up GPS tracking device to each and every
+            vechicles. We cover the states of entire India and our vehicles ply
+            the entire length and breadth of our Nation.
           </h4>
         </div>
       </div>
@@ -142,7 +160,7 @@
         </div>
       </div>
     </section>
-    <section class="about">
+    <section class="about" id="about-us">
       <!--main-section-start-->
 
       <h1>About Us</h1>
@@ -211,18 +229,20 @@
     <section class="quote">
       <section class="blockquote-section">
         <blockquote class="classy-bq">
-          <p>
-            A partial list of Walker’s credits could make P.T. Barnum weak in
-            the knees. He has produced spectaculars for world’s fairs at New
-            York, Spokane, Knoxville and New Orleans, the 1960 Winter Olympics
-          </p>
+          <h3>
+            In over 25 years of our existence, we have never lost a client!
+            Loyalty is something we value and enjoy with our customers.
+          </h3>
         </blockquote>
       </section>
     </section>
-    <section class="contact-main">
+    <section class="contact-main" id="contact-us">
       <h1>Contact Us</h1>
       <div class="contact-us">
         <div class="contactus-left">
+          <h3 style="padding: 5px">
+            <strong> Mr. Senthil Kumar -Managing Director</strong>
+          </h3>
           <div class="contact-head">
             <h3><i class="fas fa-address-book fa-sm"></i> Address</h3>
             <span
@@ -231,41 +251,37 @@
               Shiroli (P.u) Kolhapur 416 122</span
             >
           </div>
+
           <div class="contact-head">
-            <h3><i class="fas fa-stopwatch fa-sm"></i> hours</h3>
-            <span>10:00 AM - 6:00 PM IST</span>
-          </div>
-          <div class="contact-head">
-            <h3>
-              <i class="fas fa-phone-square-alt fa-sm"></i> phone and email
-            </h3>
+            <h3><i class="fas fa-phone-square-alt fa-sm"></i> Phone</h3>
             <span>
-              Tel: 0230 – 246 2080 <br />
-              246 2150
-              <br />
-              Fax: 0230 – 246 2084 <br />
-              Mobile Number - 099229 47474 <br />
-              098505 79764
+              Moblie:<br />
+
+              967328772 / 9850579764<br />
+              Fax<br />
+
+              0230 – 246 2084<br />
             </span>
           </div>
 
           <!-- address of other branches -->
           <div class="contact-other-div">
-            <div class="contact-oter">
-              <h4><strong>Mr. Mangesh – Sales Manager</strong></h4>
+            <div class="contact-other">
+              <h4><strong>Mr. Navin Udaya – CEO</strong></h4>
               <span
-                >N.H. 4, P.B. Road, Sangli Cross Near <br />
-                Shetkari Singh Petrol Pump Shiroli (P.u) Kolhapur 416 122 <br />
-                Tel: 0230 – 246 2080 / 246 2150 Fax: 0230 – 246 2084
-              </span>
+                >N.H. 4, P.B. Road, Sangli Cross <br />Near Shetkari Singh
+                Petrol Pump<br />
+                Shiroli (P.u) Kolhapur 416 122</span
+              >
             </div>
-            <div class="contact-oter">
+            <div class="contact-other">
               <h4>
-                <strong>Mr. Mahadesh – Branch Opearational Manager</strong>
+                <strong>Mr.Rohan Surya –Regional Manager </strong>
               </h4>
               <span
-                >116/117, Sahar Cargo Estate<br />V. M. Shah Marg, J B Nagar,<br />Andheri
-                East, Mumbai 400 099</span
+                >N.H. 4, P.B. Road, Sangli Cross <br />Near Shetkari Singh
+                Petrol Pump<br />
+                Shiroli (P.u) Kolhapur 416 122</span
               >
             </div>
           </div>
@@ -281,8 +297,10 @@
               scrolling="no"
               marginheight="0"
               marginwidth="0"
+              title="APS Translines"
               src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-            ></iframe>
+              >APS Translines</iframe
+            >
           </div>
           <form
             class="form"
@@ -315,7 +333,12 @@
         ©2021 APS Transline Pvt. Ltd.
       </div>
     </footer>
-
-    <script rel="preload" src="./app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script rel="preload" async src="./app.js"></script>
+    <!-- <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script> -->
   </body>
 </html>

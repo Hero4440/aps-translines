@@ -1,14 +1,23 @@
+:root {
+  --animate-delay: 2s;
+}
 body {
   background-color: #e8e8e8;
   margin: 0;
   background: #f5f8fd;
   font-family: "Montserrat", sans-serif;
+  font-display: swap;
+
   text-align: center;
+}
+i {
+  position: absolute;
+  margin-left: -40px;
 }
 #start-page {
   background-image: url("./truck.jpg");
   background-repeat: no-repeat;
-  height: 720px;
+  height: 100vh;
   background-size: 100% 100%;
 }
 
@@ -21,7 +30,7 @@ body {
   padding-bottom: 0;
 }
 .start-heading-back {
-  margin: 15px 50px 25px 50px;
+  margin: 15px 60px 25px 60px;
   background-color: #1e2329cc;
   padding: 10px 0px 15px;
 }
@@ -54,7 +63,7 @@ body {
   display: flex;
   justify-content: space-around;
   z-index: 1000;
-
+  font-size: 32px;
   top: 0px;
   margin-left: 0px;
   width: 100%;
@@ -91,6 +100,7 @@ body {
 
 .sticky {
   position: fixed;
+  display: block;
   top: 0;
   width: 100%;
 }
@@ -121,6 +131,7 @@ body {
 }
 .box-text {
   padding: 20px 25px;
+  color: #333333;
   text-align: left;
 }
 .box-img {
@@ -139,7 +150,7 @@ body {
   padding-right: 50px;
 }
 .client-name {
-  color: rgb(75, 72, 72);
+  color: rgb(97, 95, 95);
   font-size: 1.6rem;
   text-align: left;
   width: 250px;
@@ -181,7 +192,7 @@ body {
   margin: 1.5em 10px;
   padding: 40px 25px;
   quotes: "\201C""\201D""\2018""\2019";
-  color: white;
+  color: rgb(221, 215, 215);
 }
 .classy-bq:before {
   color: white;
@@ -297,7 +308,7 @@ textarea {
 
 @media only screen and (max-width: 920px) {
   body {
-    font-size: 16px;
+    font-size: 14px;
     padding-top: 95px;
   }
   #start-page {
@@ -306,38 +317,37 @@ textarea {
     height: 520px;
     background-size: 100% 100%;
   }
+  .start-button {
+    display: none;
+  }
 
   .start-logo {
-    width: 15rem;
-    height: 12rem;
+    display: none;
   }
   .start-heading-back {
-    margin: 10px 40px 20px 40px;
+    margin: 0px 40px 20px 40px;
     padding: 15px 5px 15px;
   }
   .start-heading {
     font-size: 3rem;
+    padding-top: 10px;
   }
   .start-sub {
     font-size: 2rem;
   }
-  .start-button {
-    width: 120px;
-    height: 40px;
-    margin-top: 20px;
-  }
+
   #navbar {
     position: fixed;
+    width: 100vw;
   }
   #navbar a:not(:nth-child(3)) {
     display: none;
   }
   #navbar a.icon {
-    float: right;
     display: block;
+    padding: 0;
   }
   #navbar.responsive {
-    position: relative;
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -349,6 +359,7 @@ textarea {
     top: 0;
   }
   #navbar.responsive a {
+    float: none;
     display: block;
     text-align: center;
   }
@@ -360,7 +371,7 @@ textarea {
   /* sevices */
   .blank {
     height: 200px;
-    display: block;
+    display: none;
   }
   .notblank {
   }
@@ -441,14 +452,15 @@ textarea {
   }
   .contact-head h3 {
     font-size: 2.2rem;
+    width: 220px;
+  }
+  .contact-head span {
     width: 200px;
   }
-  span {
-    width: 200px;
-  }
-  .contact-other-div {
-    padding: 1px;
-  }
+  /* .contact-other-div {
+    padding-left: 10px;
+    padding-right: 10px;
+  } */
   .contactus-right {
     align-items: center;
     padding: 20px 50px 50px 20px;

@@ -19,9 +19,13 @@ function myFunction() {
 // navbar
 function navBar() {
   var x = document.getElementById("navbar");
+  var logoDisplay = document.getElementById("nav-display");
+
   if (x.className === "topnav") {
     x.className += " responsive";
+    logoDisplay.style.display = "none";
   } else {
     x.className = "topnav";
+    logoDisplay.style.display = "block";
   }
 }
