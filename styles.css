@@ -199,7 +199,7 @@ i {
   content: open-quote;
   font-size: 4em;
   line-height: 0.05em;
-  margin-right: 0.25em;
+  padding-right: 0.25em;
   opacity: 0.6;
 }
 blockquote p {
@@ -345,7 +345,7 @@ textarea {
   }
   #navbar a.icon {
     display: block;
-    padding: 0;
+    padding-top: 0;
   }
   #navbar.responsive {
     display: flex;
@@ -383,7 +383,7 @@ textarea {
   .box {
     margin: 10px 0px 20px 0;
 
-    width: 450px;
+    width: 100vw;
   }
 
   .box-img {
