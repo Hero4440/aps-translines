@@ -322,7 +322,7 @@ textarea {
   body {
     overflow-x: hidden;
   }
-  .icon-mobile {
+  i.icon-mobile {
     display: none;
   }
   #start-page {
@@ -430,20 +430,20 @@ textarea {
     padding: 10px;
   }
   .about-left {
-    margin: 5px 50px 10px 100px;
+    margin: 2px 10px 2px 10px;
   }
-
+  img.logo-about {
+    width: 60px;
+    height: 70px;
+  }
   .logo-about {
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 5px;
   }
-  .about h3 {
-    text-align: left;
-    font-weight: bold;
-  }
+
   .about p {
     text-align: left;
-    padding-left: 40px;
+    padding-left: 0px;
     font-size: 1.5rem;
   }
 
@@ -463,24 +463,28 @@ textarea {
   .contact-head {
     display: flex;
     justify-content: space-around;
-    /* margin: 0 100px 10px 100px; */
+    margin: 0 0px 10px 0px;
     text-align: left;
     padding-bottom: 20px;
   }
+
+  .contactus-left {
+    padding: 10px 15px 10px 15px;
+  }
   .contact-head h3 {
     font-size: 2.2rem;
-    width: 220px;
+    width: 80px;
   }
   .contact-head span {
     width: 200px;
   }
-  /* .contact-other-div {
-    padding-left: 10px;
-    padding-right: 10px;
-  } */
+  .contact-other-div {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
   .contactus-right {
     align-items: center;
-    padding: 20px 50px 50px 20px;
+    padding: 20px 20px 50px 12px;
     width: 100%;
   }
   form {
