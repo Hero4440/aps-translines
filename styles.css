@@ -7,7 +7,7 @@ body {
   height: 100%;
   margin: 0px;
   padding: 0px;
-  overflow-x: hidden;
+  overflow: visible;
 }
 body {
   background-color: #e8e8e8;
@@ -318,6 +318,10 @@ textarea {
     font-size: 14px;
     padding-top: 95px;
   }
+  html,
+  body {
+    overflow-x: hidden;
+  }
   #start-page {
     background-image: url("./truck.jpg");
     background-repeat: no-repeat;
@@ -353,6 +357,9 @@ textarea {
   #navbar a.icon {
     display: block;
     margin-top: 20px;
+  }
+  #navbar a:hover {
+    background-color: #0082bf;
   }
   #navbar.responsive {
     display: flex;
